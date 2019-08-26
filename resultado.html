@@ -12,6 +12,17 @@
 				}
 				
 			}
+			
+			window.onload = function(){
+				chamarAPI();
+			}
+			
+			function chamarAPI(){
+				const endpoint = "https://api.exchangeratesapi.io/latest";
+				var request = new XMLHttpRequest();
+				request.open("GET", endpoint);
+				request.send();
+			}
 		</script>
 		
 	</head>
